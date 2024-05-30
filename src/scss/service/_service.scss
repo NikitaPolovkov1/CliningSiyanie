@@ -1,0 +1,44 @@
+.service__wrapper__section{
+
+
+  .container__flex-service{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    .service__item-flex{
+
+      flex: 1 1 calc(50% - 50px);
+
+      h1{
+        font-size: 64px;
+        line-height: 120%;
+        color: #2e3639;
+      }
+
+      p{
+
+        margin-top: 50px;
+      }
+
+      button{
+        background-color: $mainColor;
+        padding: 20px 50px;
+        color: #FFF;
+        border: none;
+        font-size: 18px;
+        margin-top: 60px;
+        border: 1px solid $mainColor;
+        transition: .4s;
+        text-transform: uppercase;
+        letter-spacing: 1.2px;
+
+        &:hover{
+          color: $mainColor;
+          background-color: #FFF;
+          transition: .4s;
+        }
+      }
+    }
+  }
+
+}

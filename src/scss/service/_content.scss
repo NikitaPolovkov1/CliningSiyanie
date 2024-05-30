@@ -1,0 +1,18 @@
+
+
+.content__section{
+
+  .main__content{
+    margin-top: 50px;
+    font-size: 20px;
+  }
+
+  ul,ol{
+    margin-left: 30px;
+    color: $mainColor;
+    position: relative;
+    li{
+      color: #000;
+    }
+  }
+}

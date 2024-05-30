@@ -1,0 +1,26 @@
+.anchors__section{
+
+  .container__anchors{
+    display: flex;
+    gap: 40px;
+    border-bottom: 1px solid rgba(157, 174, 182, 0.2);
+
+
+    .anchor__item{
+      padding: 10px 0px;
+      a{
+        font-size: 19px;
+        color: #9DAEB6;
+
+      }
+
+    }
+
+    .active__anchor{
+      a{
+        color: $mainColor;
+      }
+      border-bottom: 2px solid $mainColor;
+    }
+  }
+}

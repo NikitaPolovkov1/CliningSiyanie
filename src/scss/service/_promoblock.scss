@@ -1,0 +1,68 @@
+
+
+.promo__section{
+  background-color: $mainColor;
+  padding: 70px;
+
+  .container__promo{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    .promo__item{
+      flex:  1 1 calc(50% - 40px);
+
+      h6{
+        color: #FFF;
+        font-size: 25px;
+      }
+
+      .form-group{
+        margin-top: 20px;
+
+        label{
+          margin-bottom: 10px;
+          display: block;
+          color: #FFF;
+          font-size: 18px;
+        }
+
+        input, textarea{
+          width: 100%;
+          padding: 20px 30px;
+          border: 1px solid #FFF;
+          background-color: transparent;
+          color: #FFF;
+
+          &:focus {
+            border: 1px solid #FFF; // Изменение цвета границы на зеленый при фокусе
+            outline: none; // Убирает стандартное выделение
+          }
+        }
+
+        button{
+          width: 100%;
+          background-color: transparent;
+          padding: 20px 50px;
+          color: #FFF;
+          font-size: 18px;
+          border: 1px solid #FFF;
+          transition: 0.4s;
+          text-transform: uppercase;
+          letter-spacing: 1.2px;
+        }
+
+        .send{
+          color: #FFF;
+        }
+
+      }
+      .from-group__buttons {
+        display: grid;
+        grid-template-columns: 1fr 1fr; // Создание двух равных колонок
+        gap: 20px; // Отступ между колонками
+        align-items: center;
+        margin-top: 20px;
+      }
+    }
+  }
+}

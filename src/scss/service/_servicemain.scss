@@ -1,0 +1,107 @@
+.main__service__section{
+
+  .container__main__service{
+
+    display: flex;
+    gap: 40px;
+
+    .main__service__item{
+
+      flex: 1 1 calc(50% - 40px);
+      max-height: 500px;
+
+      img{
+        height: 100%;
+        object-fit: cover;
+      }
+
+      button{
+        background-color: $mainColor;
+        padding: 20px 50px;
+        color: #FFF;
+        border: none;
+        font-size: 18px;
+        margin-top: 40px;
+        border: 1px solid $mainColor;
+        transition: .4s;
+        text-transform: uppercase;
+        letter-spacing: 1.2px;
+
+        &:hover{
+          color: $mainColor;
+          background-color: #FFF;
+          transition: .4s;
+        }
+      }
+
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 0 auto;
+        background-color: #fff;
+        flex: 1 1 calc(50% - 20px);
+
+        thead {
+          tr {
+            &:hover {
+              background-color: #fff;
+            }
+          }
+        }
+
+        th {
+          padding: 16px;
+          text-align: left;
+          color: $mainColor;
+          font-size: 22px;
+        }
+
+        td {
+          padding: 16px;
+          text-align: left;
+          border-bottom: 1px solid #ddd;
+
+          &:first-child {
+            font-weight: bold;
+            font-size: 16px;
+            transition: .4s;
+          }
+
+          &:last-child {
+            text-align: right;
+            font-size: 16px;
+            color: $mainColor;
+            transition: .4s;
+          }
+        }
+
+        tbody {
+          tr {
+            transition: .4s;
+            &:hover {
+              background-color: $mainColor;
+              transition: .4s;
+
+              td {
+                &:first-child {
+                  font-weight: bold;
+                  font-size: 16px;
+                  color: #fff;
+                  transition: .4s;
+                }
+
+                &:last-child {
+                  text-align: right;
+                  font-size: 18px;
+                  color: #fff;
+                  transition: .4s;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

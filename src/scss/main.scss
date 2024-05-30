@@ -9,6 +9,15 @@ $mainColor: #2bb446;
 @import "./blocks/about";
 @import "./blocks/reviews";
 @import "./blocks/blog";
+@import "./services/services";
+@import "./services/wrapperservices";
+@import "./services/tabs";
+@import "./service/service";
+@import "./service/anchors";
+@import "./service/servicemain";
+@import "./service/promoblock";
+@import "./service/content";
+@import "./service/faq";
 
 *{
   margin: 0;
@@ -32,7 +41,15 @@ a, button, input{
 .whywe__section,
 .about__section,
 .reviews__section,
-.blog__section{
+.blog__section,
+.wrapperservices__section,
+.tab,
+.service__wrapper__section,
+.anchors__section,
+.main__service__section,
+.promo__section,
+.content__section,
+.accordions{
   width: 100%;
   max-width: 1500px;
   margin: 0 auto;
