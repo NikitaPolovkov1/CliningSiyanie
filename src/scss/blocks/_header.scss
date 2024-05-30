@@ -1,0 +1,30 @@
+
+
+header{
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+
+  .bottom__menu-header{
+
+    padding: 15px 6px;
+    nav{
+      ul{
+        list-style: none;
+        display: flex;
+        justify-content: start;
+        gap: 10px 35px;
+        li{
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 21.86px;
+          text-align: left;
+
+          a{
+            color: black;
+          }
+        }
+      }
+    }
+  }
+}

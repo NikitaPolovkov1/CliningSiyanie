@@ -1,0 +1,45 @@
+$mainColor: #2bb446;
+
+@import "./blocks/header";
+@import "./blocks/wrapper";
+@import "./blocks/preim";
+@import "./blocks/services";
+@import "./blocks/whywe";
+@import "./blocks/formblock";
+@import "./blocks/about";
+@import "./blocks/reviews";
+@import "./blocks/blog";
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Manrope", sans-serif;
+}
+
+img{
+  width: 100%;
+}
+
+
+a, button, input{
+  cursor: pointer;
+}
+
+.preim__section,
+.service__container-wrapper,
+.whywe__section,
+.about__section,
+.reviews__section,
+.blog__section{
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+  margin-top: 80px;
+
+  h2{
+    font-size: 58px;
+    line-height: 120%;
+  }
+}

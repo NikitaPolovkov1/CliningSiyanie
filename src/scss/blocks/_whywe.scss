@@ -1,0 +1,31 @@
+.whywe__section{
+
+  .whywe__container{
+    display: flex;
+    gap: 20px;
+    margin-top: 50px;
+
+    .whywe__item{
+      flex: 1 1 calc(33.33%  - 20px);
+      border: 1px solid rgba(157, 174, 182, .2);
+      padding: 30px;
+
+      img{
+        max-width: 70px;
+      }
+
+      h5{
+        margin-top: 60px;
+        font-size: 23px;
+        line-height: 120%;
+      }
+      p{
+        margin-top: 20px;
+        font-size: 17px;
+        line-height: 140%;
+        color: #6d7a80;
+        text-align: justify;
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+.blog__section{
+  .container__flex-title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    a{
+      font-size: 20px;
+      color: #000;
+      padding: 10px;
+      transition: 0.4s ease; // Плавный переход для всех изменений
+      position: relative;
+
+
+      // Стили при наведении
+      &:hover {
+        color: $mainColor;
+      }
+
+    }
+  }
+}
