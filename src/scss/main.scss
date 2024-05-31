@@ -1,24 +1,5 @@
 $mainColor: #2bb446;
-@import "./blocks/header";
-@import "./blocks/wrapper";
-@import "./blocks/preim";
-@import "./blocks/services";
-@import "./blocks/whywe";
-@import "./blocks/formblock";
-@import "./blocks/about";
-@import "./blocks/reviews";
-@import "./blocks/blog";
-@import "./services/services";
-@import "./services/wrapperservices";
-@import "./services/tabs";
-@import "./service/service";
-@import "./service/anchors";
-@import "./service/servicemain";
-@import "./service/promoblock";
-@import "./service/content";
-@import "./service/faq";
-@import "./contacts/main";
-@import "./about/about";
+
 
 *{
   margin: 0;
@@ -43,6 +24,7 @@ a, button, input{
 .about__section,
 .reviews__section,
 .blog__section,
+.blog__section__page,
 .wrapperservices__section,
 .tab,
 .service__wrapper__section,
@@ -52,7 +34,8 @@ a, button, input{
 .content__section,
 .accordions,
 .main__contacts__section,
-.about__main__section{
+.about__main__section,
+.blog__single__section{
   width: 100%;
   max-width: 1500px;
   margin: 0 auto;
@@ -62,4 +45,41 @@ a, button, input{
     font-size: 58px;
     line-height: 120%;
   }
+
+  .breadcrumbs{
+    color: #9b9b9b;
+    font-weight: 600;
+    margin-bottom: 50px;
+  }
 }
+
+.page__reviews,
+.blog__section__page,
+.blog__single__section{
+  margin-top: 10px;
+}
+
+
+
+
+@import "./blocks/header";
+@import "./blocks/wrapper";
+@import "./blocks/preim";
+@import "./blocks/services";
+@import "./blocks/whywe";
+@import "./blocks/formblock";
+@import "./blocks/about";
+@import "./blocks/reviews";
+@import "./blocks/blog";
+@import "./blocks/blogsingle";
+@import "./services/services";
+@import "./services/wrapperservices";
+@import "./services/tabs";
+@import "./service/service";
+@import "./service/anchors";
+@import "./service/servicemain";
+@import "./service/promoblock";
+@import "./service/content";
+@import "./service/faq";
+@import "./contacts/main";
+@import "./about/about";
