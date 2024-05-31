@@ -2,29 +2,66 @@
 
 header{
   width: 100%;
-  max-width: 1280px;
-  margin: 0 auto;
+  position: sticky;
+  top: 0;
+  padding: 20px 0px;
+  background-color: #FFF;
+  transition: .4s;
+  z-index: 5;
 
-  .bottom__menu-header{
+  .container__header{
+    display: flex;
+    max-width: 1500px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 50px;
 
-    padding: 15px 6px;
+    .logo{
+      font-size: 50px;
+    }
     nav{
-      ul{
-        list-style: none;
-        display: flex;
-        justify-content: start;
-        gap: 10px 35px;
-        li{
-          font-size: 16px;
-          font-weight: 500;
-          line-height: 21.86px;
-          text-align: left;
+       ul{
+         list-style: none;
+         display: flex;
+         gap: 30px;
+         li{
+           font-size: 16px;
+           line-height: 150%;
+           letter-spacing: 0.1em;
+           text-transform: uppercase;
+           font-weight: 600;
+           a{
+             color: #2e3639;
 
-          a{
-            color: black;
-          }
+           }
+         }
+       }
+    }
+
+    .social__icons{
+      display: flex;
+      gap: 10px;
+
+      .phone{
+        font-size: 20px;
+        line-height: 150%;
+        font-weight: 800;
+        margin-right: 30px;
+        a{
+          color: #000;
         }
+      }
+
+      img{
+        max-width: 30px;
       }
     }
   }
+}
+
+.header__active{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 10px 0px;
+  transition: .4s;
 }

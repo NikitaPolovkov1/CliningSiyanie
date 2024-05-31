@@ -1,0 +1,59 @@
+
+
+.main__contacts__section{
+  .container__contacts{
+    display: flex;
+    gap: 40px ;
+    margin-top: 50px;
+
+    .contact__item{
+      flex: 1 1 calc(50% - 40px);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 50px;
+
+      .phone, .adress{
+        list-style: none;
+        flex: 1 1 calc(50% - 50px);
+        li{
+          margin-bottom: 10px;
+          a{
+            font-size: 23px;
+            color: #000;
+            transition: .4s;
+
+            &:hover{
+              color: $mainColor;
+              transition: .4s;
+            }
+          }
+        }
+      }
+
+      .rekviz{
+        flex: 1 1 calc(100% - 50px);
+        list-style: none;
+
+
+        li:first-child{
+          margin-left: 0px;
+          color: $mainColor;
+          margin-bottom: 20px;
+          font-size: 20px;
+        }
+
+        li{
+          margin-left: 10px;
+          font-size: 18px;
+          margin-bottom: 10px;
+        }
+      }
+
+      .map{
+        width: 50vw;
+        max-width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}

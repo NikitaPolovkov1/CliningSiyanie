@@ -51,7 +51,25 @@ $(document).ready(function(){
         $("#"+accordionitem).parent().siblings().find(".accordion-title i.fa-chevron-down").removeClass("chevron-top");
     });
 
+    function checkScroll() {
+        if ($(window).scrollTop() > 0) {
+            $('header').addClass('header__active');
+        } else {
+            $('header').removeClass('header__active');
+        }
+    }
+
+    // Проверяем положение прокрутки при загрузке страницы
+    checkScroll();
+
+    // Проверяем положение прокрутки при каждом скролле
+    $(window).scroll(function() {
+        checkScroll();
+    });
+
 });
+
+
 
 
 // accordionitem == item1

@@ -1,5 +1,4 @@
 $mainColor: #2bb446;
-
 @import "./blocks/header";
 @import "./blocks/wrapper";
 @import "./blocks/preim";
@@ -18,6 +17,7 @@ $mainColor: #2bb446;
 @import "./service/promoblock";
 @import "./service/content";
 @import "./service/faq";
+@import "./contacts/main";
 
 *{
   margin: 0;
@@ -49,7 +49,8 @@ a, button, input{
 .main__service__section,
 .promo__section,
 .content__section,
-.accordions{
+.accordions,
+.main__contacts__section{
   width: 100%;
   max-width: 1500px;
   margin: 0 auto;
