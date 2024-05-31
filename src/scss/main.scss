@@ -18,6 +18,7 @@ $mainColor: #2bb446;
 @import "./service/content";
 @import "./service/faq";
 @import "./contacts/main";
+@import "./about/about";
 
 *{
   margin: 0;
@@ -50,7 +51,8 @@ a, button, input{
 .promo__section,
 .content__section,
 .accordions,
-.main__contacts__section{
+.main__contacts__section,
+.about__main__section{
   width: 100%;
   max-width: 1500px;
   margin: 0 auto;

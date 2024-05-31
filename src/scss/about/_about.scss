@@ -1,0 +1,23 @@
+.about__main__section{
+  .about__container{
+    display: flex;
+
+    gap: 50px;
+
+    .about__item{
+      flex: 1 1 calc(50% - 50px);
+
+      p{
+        margin-top: 50px;
+        font-size: 18px;
+        font-weight: 500;
+      }
+
+      ul{
+        li{
+
+        }
+      }
+    }
+  }
+}
