@@ -36,3 +36,20 @@
     color: #6d7a80;
   }
 }
+
+
+
+@media screen and (max-width: 578px)
+{
+  .about__section{
+
+    .about__container{
+      margin-top: 20px;
+    }
+
+    p{
+      font-size: 70em;
+      margin-top: 20px;
+    }
+  }
+}

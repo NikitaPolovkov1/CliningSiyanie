@@ -52,7 +52,7 @@
   .whywe__section{
 
     .whywe__container{
-      flex-wrap: wrap;
+      margin-top: 20px;
 
       .whywe__item{
         flex: 1 1 calc(33.33%  - 20px);
@@ -64,12 +64,12 @@
         }
 
         h5{
-          margin-top: 60px;
+          margin-top: 25px;
           font-size: 23px;
           line-height: 120%;
         }
         p{
-          margin-top: 20px;
+          margin-top: 15px;
           font-size: 17px;
           line-height: 140%;
           color: #6d7a80;

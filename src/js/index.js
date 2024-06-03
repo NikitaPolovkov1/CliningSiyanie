@@ -71,7 +71,7 @@ $(document).ready(function(){
     $('.slider_all').slick({
         arrows:true,
         dots:false,
-        slidesToShow:4,
+        slidesToShow: 4,
         autoplay:false,
         speed:1000,
         autoplaySpeed:800,
@@ -113,7 +113,29 @@ $(document).ready(function(){
                 }
             }
         ]
-    })
+    });
+
+    function checkWidth() {
+        if ($(window).width() < 600) {
+            $('.slider__service').slick({
+                arrows:true,
+                dots:false,
+                slidesToShow:1,
+                autoplay:false
+            });
+        }
+        else{
+            if ($('.slider__service').hasClass('slick-initialized')) {
+                $('.slider__service').slick('unslick');
+            }
+        }
+    }
+
+    $(window).resize(function() {
+        checkWidth();
+    });
+
+    checkWidth();
 
 });
 

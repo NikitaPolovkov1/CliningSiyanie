@@ -74,3 +74,27 @@
     }
   }
 }
+
+
+@media screen and (max-width: 578px){
+  .reviews__section{
+
+    .container__flex-title{
+      flex-wrap: wrap;
+
+      h2{
+        max-width: 100%;
+        width: 100%;
+      }
+      a{
+        font-size: 18px;
+        color: #000;
+        padding: 20px 0px;
+      }
+    }
+
+    .container__reviews{
+      margin-top: 0px;
+    }
+  }
+}

@@ -4,47 +4,49 @@
     margin-top: 50px;
     display: flex;
     gap: 30px;
-
     .flex__item-preim{
       flex: 1 1 calc(25% - 30px);
-      min-height: 320px;
-      background-size: 120%;
-      padding: 20px;
-      display: flex !important;
-      align-items: end;
-      position: relative;
-      transition: .4s;
-
-      &::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)); // Градиент от прозрачного к черному
-        z-index: 1; // Градиент будет под содержимым элемента
-      }
-
-      &:hover{
-        background-size: 130%;
+      div{
+        background-size: 120%;
+        min-height: 320px;
+        padding: 20px;
+        display: flex !important;
+        align-items: end;
+        position: relative;
         transition: .4s;
-        h4{
-          font-size: 23px ;
-          transition: .4s;
+
+        &::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)); // Градиент от прозрачного к черному
+          z-index: 1; // Градиент будет под содержимым элемента
         }
 
-      }
+        &:hover{
+          background-size: 130%;
+          transition: .4s;
+          h4{
+            font-size: 23px ;
+            transition: .4s;
+          }
+
+        }
 
 
-      h4{
-        font-size: 21px ;
-        line-height: 1.4 ;
-        position: relative;
-        z-index: 2;
-        color: #FFF;
-        transition: .4s;
+        h4{
+          font-size: 21px ;
+          line-height: 1.4 ;
+          position: relative;
+          z-index: 2;
+          color: #FFF;
+          transition: .4s;
+        }
       }
+
     }
   }
   p{
@@ -59,7 +61,6 @@
 
 @media screen and (max-width: 900px){
   .preim__section {
-
     .container__preim-flex {
       margin-top: 20px;
       flex-wrap: wrap;
@@ -75,17 +76,23 @@
 @media screen and (max-width: 578px){
   .preim__section {
     p{
-      font-size: 80em;
+      font-size: 70em;
+      margin-top: 20px;
     }
-
     .container__preim-flex {
       margin-top: 20px;
       flex-wrap: wrap;
       gap: 10px;
 
       .flex__item-preim{
-      }
 
+        div{
+
+          h4{
+            font-size: 90em;
+          }
+        }
+      }
 
     }
   }

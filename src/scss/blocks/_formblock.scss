@@ -1,5 +1,3 @@
-
-
 .form__section{
   width: 100%;
   max-width: 1920px;
@@ -8,7 +6,6 @@
   margin-top: 80px;
   gap: 40px;
 
-
   .flex__item-form{
     flex: 1 1 calc(50% - 40px);
     max-height: 700px;
@@ -16,8 +13,6 @@
       height: 100%;
       object-fit: cover;
     }
-
-
 
     form{
       padding: 20px 170px 20px 20px;
@@ -58,7 +53,6 @@
           text-transform: uppercase;
           letter-spacing: 1.2px;
         }
-
       }
 
       .from-group__buttons {
@@ -67,8 +61,80 @@
         gap: 20px; // Отступ между колонками
         align-items: center;
       }
+    }
+  }
+}
+
+/* Медиа-запросы должны идти после основных стилей */
+@media screen and (max-width: 1280px) {
+  .form__section {
+    .flex__item-form {
+      form {
+        padding: 20px;
+        h2 {
+          font-size: 48px ;
+          line-height: 100%;
+        }
+        .from-group__buttons div {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .form__section {
+    padding: 0 20px;
+    gap: 0;
+    .flex__item-form {
+      flex: 1 1 100%;
+      &:nth-child(1) {
+        flex: 0 0 0%;
+      }
+      img {
+        display: none;
+      }
+      form {
+        h2 {
+          font-size: 130em;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 578px) {
+  .form__section {
+    padding: 0 20px;
+    margin-top: 50px;
+    gap: 0;
+    .flex__item-form {
+      flex: 1 1 100%;
+      &:nth-child(1) {
+        flex: 0 0 0%;
+      }
+      img {
+        display: none;
+      }
+      form {
+
+        padding: 0;
+        h2 {
+          font-size: 130em;
+          text-align: center;
+          margin-bottom: 10px;
+        }
 
 
+        .form-group{
+          margin-top: 10px;
+        }
+
+        .from-group__buttons{
+          grid-template-columns: 1fr;
+        }
+      }
     }
   }
 }
