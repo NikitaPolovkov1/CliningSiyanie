@@ -83,3 +83,36 @@
     }
   }
 }
+
+@media screen and (max-width: 900px)
+{
+  .service__section{
+    .service__container-wrapper{
+      .container__service{
+        .container__service-flex{
+          .service__item{
+            flex: 1 1 calc(25% - 20px) !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 578px)
+{
+  .service__section{
+    .service__container-wrapper{
+      padding: 30px 20px;
+      .container__service{
+        margin-top: 30px !important;
+        .container__service-flex{
+          .service__item{
+            flex: 1 1 calc(25% - 20px) !important;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,6 +1,155 @@
 $mainColor: #2bb446;
 
 
+
+
+
+//slider
+
+.slick-slider{
+  min-width: 0;
+}
+/* Ограничивающая оболочка */
+.slick-list {
+  overflow: hidden;
+  width: 100%;
+}
+/* Лента слайдов */
+.slick-track{
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  width: 100% ;
+}
+
+/* Слайд */
+.slick-slide{
+  flex: 1 1 calc(25% - 30px);
+}
+
+
+
+/* Конкретный слайдер */
+.slider_all {
+  position: relative;
+  padding: 0px 0px;
+}
+
+.slider_all .slick-arrow{
+  position: absolute;
+  top: -50px;
+  margin: -30px 0px 0px 0px;
+  z-index: 10;
+  font-size: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #2e3639;
+  border: none;
+
+}
+.slider_all .slick-prev{
+  right: 30px;
+  background: url('../img/sl-arrow_l.png')  no-repeat;
+  background-size: cover;
+}
+.slider_all .slick-arrow.slick-next{
+  right: 0;
+  background: url('../img/sl-arrow_r.png')  no-repeat;
+  background-size: cover;
+}
+.slider_all .slick-arrow.slick-disabled{
+  opacity: 0.2;
+}
+
+.slider_all .slick-dots{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slider_all .slick-dots li{
+  list-style: none;
+  margin: 0px 10px;
+}
+.slider_all .slick-dots button{
+  font-size: 0;
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.slider_all .slick-dots li.slick-active button{
+  background-color: transparent;
+  border: 1px solid #fff;
+}
+
+.slider__item {
+  padding: 0px 15px;
+  margin-right: 20px;
+}
+
+
+
+
+
+
+
+.slider__reviews {
+  position: relative;
+  padding: 0px 0px;
+  margin-top: 90px;
+}
+
+.slider__reviews .slick-arrow{
+  position: absolute;
+  top: -50px;
+  margin: -30px 0px 0px 0px;
+  z-index: 10;
+  font-size: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #2e3639;
+  border: none;
+
+}
+.slider__reviews .slick-prev{
+  right: 40px;
+  background: url('../img/sl-arrow_l.png')  no-repeat;
+  background-size: cover;
+}
+.slider__reviews .slick-arrow.slick-next{
+  right: 10px;
+  background: url('../img/sl-arrow_r.png')  no-repeat;
+  background-size: cover;
+}
+.slider__reviews .slick-arrow.slick-disabled{
+  opacity: 0.2;
+}
+
+.slider__reviews .slick-dots{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slider__reviews .slick-dots li{
+  list-style: none;
+  margin: 0px 10px;
+}
+.slider__reviews .slick-dots button{
+  font-size: 0;
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.slider__reviews .slick-dots li.slick-active button{
+  background-color: transparent;
+  border: 1px solid #fff;
+}
+
 *{
   margin: 0;
   padding: 0;
@@ -35,7 +184,8 @@ a, button, input{
 .accordions,
 .main__contacts__section,
 .about__main__section,
-.blog__single__section{
+.blog__single__section,
+.container__footer{
   width: 100%;
   max-width: 1500px;
   margin: 0 auto;
@@ -72,6 +222,7 @@ a, button, input{
 @import "./blocks/reviews";
 @import "./blocks/blog";
 @import "./blocks/blogsingle";
+@import "./blocks/footer";
 @import "./services/services";
 @import "./services/wrapperservices";
 @import "./services/tabs";
@@ -83,3 +234,5 @@ a, button, input{
 @import "./service/faq";
 @import "./contacts/main";
 @import "./about/about";
+@import "./adaptive";
+

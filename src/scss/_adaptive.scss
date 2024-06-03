@@ -1,0 +1,123 @@
+
+@media screen and (max-width: 1500px) {
+  .preim__section,
+  .service__container-wrapper,
+  .whywe__section,
+  .about__section,
+  .reviews__section,
+  .blog__section,
+  .blog__section__page,
+  .wrapperservices__section,
+  .tab,
+  .service__wrapper__section,
+  .anchors__section,
+  .main__service__section,
+  .promo__section,
+  .content__section,
+  .accordions,
+  .main__contacts__section,
+  .about__main__section,
+  .blog__single__section,
+  .container__footer,
+  {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-top: 80px;
+
+    h2{
+      font-size: 58px;
+      line-height: 120%;
+    }
+
+    .breadcrumbs{
+      color: #9b9b9b;
+      font-weight: 600;
+      margin-bottom: 50px;
+    }
+  }
+
+  .page__reviews,
+  .blog__section__page,
+  .blog__single__section{
+    margin-top: 10px;
+  }
+
+  .wrapper__section{
+    max-width: 1280px;
+  }
+  .container__header{
+    max-width: 1280px !important;
+    margin: 0 auto !important;
+  }
+
+}
+
+
+
+@media screen and (max-width: 1280px){
+  .preim__section,
+  .service__container-wrapper,
+  .whywe__section,
+  .about__section,
+  .reviews__section,
+  .blog__section,
+  .blog__section__page,
+  .wrapperservices__section,
+  .tab,
+  .service__wrapper__section,
+  .anchors__section,
+  .main__service__section,
+  .promo__section,
+  .content__section,
+  .accordions,
+  .main__contacts__section,
+  .about__main__section,
+  .blog__single__section,
+  .container__footer,
+  {
+
+    padding: 0px 20px;
+
+  }
+}
+
+
+@media screen and (max-width: 900px){
+
+  body{
+    font-size: calc(100vw/1700);
+  }
+
+  .preim__section,
+  .service__container-wrapper,
+  .whywe__section,
+  .about__section,
+  .reviews__section,
+  .blog__section,
+  .blog__section__page,
+  .wrapperservices__section,
+  .tab,
+  .service__wrapper__section,
+  .anchors__section,
+  .main__service__section,
+  .promo__section,
+  .content__section,
+  .accordions,
+  .main__contacts__section,
+  .about__main__section,
+  .blog__single__section,
+  .container__footer,
+  {
+
+    padding: 0px 20px;
+    margin-top: 50px;
+
+    h2{
+      font-size: 110em;
+    }
+
+  }
+}
+
+

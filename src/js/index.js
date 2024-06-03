@@ -1,4 +1,5 @@
 import $ from "jquery"
+import "slick-slider"
 
 document.addEventListener('DOMContentLoaded', function() {
     // Добавляем класс 'active' к ul.tabs и класс 'current' к первому элементу li
@@ -66,6 +67,53 @@ $(document).ready(function(){
     $(window).scroll(function() {
         checkScroll();
     });
+
+    $('.slider_all').slick({
+        arrows:true,
+        dots:false,
+        slidesToShow:4,
+        autoplay:false,
+        speed:1000,
+        autoplaySpeed:800,
+        responsive:[
+            {
+                breakpoint: 1080,
+                settings: {
+                    slidesToShow:2
+                }
+            },
+            {
+                breakpoint: 550,
+                settings: {
+                    slidesToShow:1
+                }
+            }
+        ]
+    });
+
+
+    $('.slider__reviews').slick({
+        arrows:true,
+        dots:false,
+        slidesToShow:3,
+        autoplay:false,
+        speed:1000,
+        autoplaySpeed:800,
+        responsive:[
+            {
+                breakpoint: 1080,
+                settings: {
+                    slidesToShow:2
+                }
+            },
+            {
+                breakpoint: 550,
+                settings: {
+                    slidesToShow:1
+                }
+            }
+        ]
+    })
 
 });
 

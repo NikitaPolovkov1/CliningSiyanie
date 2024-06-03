@@ -10,7 +10,7 @@
       min-height: 320px;
       background-size: 120%;
       padding: 20px;
-      display: flex;
+      display: flex !important;
       align-items: end;
       position: relative;
       transition: .4s;
@@ -54,5 +54,39 @@
     font-size: 20px;
     line-height: 140%;
     color: #6d7a80;
+  }
+}
+
+@media screen and (max-width: 900px){
+  .preim__section {
+
+    .container__preim-flex {
+      margin-top: 20px;
+      flex-wrap: wrap;
+
+      .flex__item-preim {
+        flex: 1 1 calc(50% - 30px);
+        min-height: 200px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 578px){
+  .preim__section {
+    p{
+      font-size: 80em;
+    }
+
+    .container__preim-flex {
+      margin-top: 20px;
+      flex-wrap: wrap;
+      gap: 10px;
+
+      .flex__item-preim{
+      }
+
+
+    }
   }
 }
