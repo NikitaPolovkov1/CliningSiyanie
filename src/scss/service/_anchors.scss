@@ -4,7 +4,9 @@
   .container__anchors{
     display: flex;
     gap: 40px;
+    row-gap: 5px;
     border-bottom: 1px solid rgba(157, 174, 182, 0.2);
+    flex-wrap: wrap;
 
 
     .anchor__item{
@@ -24,4 +26,17 @@
       border-bottom: 2px solid $mainColor;
     }
   }
+}
+
+
+@media screen and (max-width: 578px){
+
+  .anchors__section .container__anchors{
+    gap: 15px;
+  }
+  .anchors__section .container__anchors .anchor__item a{
+    font-size: 16px;
+  }
+
+
 }

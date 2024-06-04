@@ -66,3 +66,80 @@
     }
   }
 }
+
+
+@media screen and (max-width: 1280px) {
+  .promo__section{
+    padding: 40px !important;
+  }
+}
+
+
+@media screen and (max-width: 900px) {
+  .promo__section{
+    .container__promo{
+      .promo__item{
+        flex:  1 1 calc(100%);
+
+        &:first-child{
+          display: none;
+        }
+
+        .form-group{
+          margin-top: 20px;
+          .send{
+            color: #FFF;
+            font-size: 16px;
+          }
+
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 578px) {
+  .promo__section{
+    padding: 30px 20px !important;
+    .container__promo{
+      .promo__item{
+        flex:  1 1 calc(100%);
+
+        h6{
+          font-size: 100em;
+        }
+
+        &:first-child{
+          display: none;
+        }
+
+        .form-group{
+          margin-top: 20px;
+
+          label{
+            font-size: 16px;
+          }
+
+          input{
+            padding: 20px;
+          }
+
+          button{
+            font-size: 60em;
+            padding: 20px;
+          }
+          .send{
+            color: #FFF;
+            font-size: 16px;
+          }
+
+        }
+
+        .from-group__buttons{
+          grid-template-columns: 1fr;
+        }
+      }
+    }
+  }
+}

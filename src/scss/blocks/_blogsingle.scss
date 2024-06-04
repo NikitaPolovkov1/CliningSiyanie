@@ -1,9 +1,35 @@
 .blog__single__section{
+  h1{
+    font-size: 64px;
+    line-height: 120%;
+    color: #2e3639;
+  }
   .date{
     margin-top: 20px;
   }
   .content{
     margin-top: 20px;
     font-size: 18px;
+  }
+}
+
+
+
+
+@media screen and (max-width: 578px){
+  .blog__single__section{
+
+    h1{
+      font-size: 150em;
+      max-width: 100% !important;
+    }
+    .date{
+      margin-top: 10px;
+      font-size: 14px;
+    }
+    .content{
+      margin-top: 10px;
+      font-size: 16px;
+    }
   }
 }

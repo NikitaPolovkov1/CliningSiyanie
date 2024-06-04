@@ -112,3 +112,69 @@ $color: blue;
 .current a {
   color: $mainColor;
 }
+
+
+@media screen and (max-width: 900px){
+  .tabs {
+
+    a{
+      padding: 10px 0px;
+    }
+  }
+}
+
+
+@media screen and (max-width: 578px){
+  .tabs {
+    margin-top: 20px;
+
+    flex-wrap: wrap;
+    gap: 10px;
+    a{
+      padding: 3px 0px;
+      font-size: 16px;
+      line-height: 16px;
+
+      &:last-child{
+        padding-bottom: 10px;
+      }
+    }
+
+
+  }
+
+
+  .tabs_item{
+    padding: 5px 0px;
+    table{
+      flex: 1 1 100%;
+
+      th{
+        padding: 5px;
+        padding-top: 10px;
+      }
+
+      td{
+        padding: 7px;
+      }
+
+      tbody {
+        tr {
+          &:hover {
+
+            td {
+              &:first-child {
+              }
+
+              &:last-child {
+                font-size: 16px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+
+  }
+}

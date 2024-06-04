@@ -58,3 +58,94 @@
     }
   }
 }
+
+
+
+@media screen and (max-width: 900px){
+
+  .main__contacts__section{
+    .container__contacts{
+
+
+      .contact__item{
+        flex: 1 1 calc(100% - 40px);
+        display: flex;
+        flex-wrap: wrap;
+        gap: 50px;
+
+        .phone, .adress{
+          flex: 1 1 calc(100% - 50px);
+        }
+
+      }
+    }
+  }
+
+}
+
+
+@media screen and (max-width: 787px){
+
+  .main__contacts__section{
+    .container__contacts{
+      flex-wrap: wrap;
+    }
+  }
+
+}
+
+
+@media screen and (max-width: 578px){
+  .main__contacts__section{
+    .container__contacts{
+      gap: 10px;
+      margin-top: 20px;
+      .contact__item{
+        gap: 5px;
+
+        .phone, .adress{
+          list-style: none;
+          li{
+            margin-bottom: 0px;
+            a{
+              font-size: 16px;
+              color: #000;
+              transition: .4s;
+
+              &:hover{
+                color: $mainColor;
+                transition: .4s;
+              }
+            }
+          }
+        }
+
+        .rekviz{
+          flex: 1 1 calc(100% - 50px);
+
+
+          li:first-child{
+            margin-left: 0px;
+            margin-bottom: 10px;
+            margin-top: 10px;
+            font-size: 18px;
+          }
+
+          li{
+            margin-left: 0px;
+            font-size: 16px;
+            margin-bottom: 10px;
+          }
+        }
+
+        .map{
+          width: 100vw;
+          max-width: 100%;
+          height: 100%;
+          min-height: 500px;
+        }
+      }
+    }
+  }
+
+}

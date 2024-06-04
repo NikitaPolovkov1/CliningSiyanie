@@ -1,5 +1,4 @@
 
-
 header{
   width: 100%;
   position: sticky;
@@ -7,7 +6,7 @@ header{
   padding: 20px 0px;
   background-color: #FFF;
   transition: .4s;
-  z-index: 5;
+  z-index: 15;
 
   .container__header{
     display: flex;
@@ -16,6 +15,11 @@ header{
     justify-content: space-between;
     align-items: center;
     padding-right: 50px;
+
+
+    .mobile__menu, .burger__menu{
+      display: none;
+    }
 
     .logo{
       font-size: 50px;
@@ -64,4 +68,91 @@ header{
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   padding: 10px 0px;
   transition: .4s;
+}
+
+@media screen and (max-width: 1280px){
+  header{
+    .container__header{
+      padding: 0px 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px){
+  header{
+    .container__header{
+      padding: 0px 20px;
+
+      .social__icons{
+
+        .phone{
+         display: none;
+        }
+
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 787px){
+  header{
+    .container__header{
+      padding: 0px 20px;
+      nav{
+        display: none;
+        ul{
+          list-style: none;
+          display: flex;
+          gap: 30px;
+          li{
+            font-size: 16px;
+            line-height: 150%;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            font-weight: 600;
+            a{
+              color: #2e3639;
+
+            }
+          }
+        }
+      }
+
+      .burger__menu{
+        display: block;
+        img{
+          max-width: 30px;
+
+        }
+
+        .close__burger{
+          display: none;
+        }
+      }
+
+      .mobile__menu{
+        display: none;
+        position: fixed;
+        width: 100vw;
+        top: 100px;
+        left: 0;
+        z-index: 16;
+        background-color: #fff;
+        padding: 10px 20px 85px;
+        ul{
+          li{
+            margin-bottom: 16px;
+            a{
+              font-size: 16px;
+              font-weight: 400;
+              line-height: 20px;
+              text-align: left;
+              color: #000;
+            }
+          }
+        }
+      }
+    }
+  }
 }

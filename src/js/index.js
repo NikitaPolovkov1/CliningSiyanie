@@ -41,6 +41,22 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 $(document).ready(function(){
+
+    $(".active__burger").click(function(){
+        $(".mobile__menu").slideDown(500);
+        $(".overlay").show();
+        $(".active__burger").hide(500);
+        $(".close__burger").show(500);
+    });
+
+    $(".close__burger, .overlay").click(function(){
+        $(".mobile__menu").slideUp(500);
+        $(".overlay").hide();
+        $(".active__burger").show(500);
+        $(".close__burger").hide(500);
+    });
+
+
     $(".accordion-title").click(function(e){
         var accordionitem = $(this).attr("data-tab");
         $("#"+accordionitem).slideToggle().parent().siblings().find(".accordion-content").slideUp();
@@ -138,10 +154,3 @@ $(document).ready(function(){
     checkWidth();
 
 });
-
-
-
-
-// accordionitem == item1
-// accordionitem == item2
-// accordionitem == item3

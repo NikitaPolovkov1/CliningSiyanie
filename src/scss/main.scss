@@ -298,6 +298,17 @@ a, button, input{
   margin-top: 10px;
 }
 
+.overlay{
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 14;
+  display: none;
+  background-color: rgba(46, 54, 57, 0.63);
+}
+
 
 
 
@@ -323,5 +334,6 @@ a, button, input{
 @import "./service/faq";
 @import "./contacts/main";
 @import "./about/about";
+@import "./blog/blog";
 @import "./adaptive";
 

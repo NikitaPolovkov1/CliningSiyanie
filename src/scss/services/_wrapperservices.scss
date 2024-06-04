@@ -34,3 +34,56 @@
     }
   }
 }
+
+@media screen and (max-width: 1280px){
+  .wrapperservices__section{
+
+    h1{
+      max-width: 100%;
+    }
+    .container__text{
+
+      max-width: 100%;
+
+    }
+  }
+}
+
+
+@media screen and (max-width: 578px){
+  .wrapperservices__section{
+
+    h1{
+      max-width: 100%;
+      font-size: 150em;
+    }
+    .container__text{
+
+      max-width: 100%;
+      margin-top: 20px;
+      p{
+        font-size: 70em;
+      }
+
+      button{
+        background-color: $mainColor;
+        padding: 10px 20px;
+        color: #FFF;
+        border: none;
+        font-size: 18px;
+        margin-top: 20px;
+        border: 1px solid $mainColor;
+        transition: .4s;
+        text-transform: uppercase;
+        letter-spacing: 1.2px;
+
+        &:hover{
+          color: $mainColor;
+          background-color: #FFF;
+          transition: .4s;
+        }
+      }
+
+    }
+  }
+}
