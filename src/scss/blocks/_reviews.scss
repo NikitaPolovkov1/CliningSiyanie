@@ -98,3 +98,142 @@
     }
   }
 }
+
+
+
+.page__reviews{
+  .container__flex-title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    a{
+      font-size: 20px;
+      color: #000;
+      padding: 10px;
+      transition: 0.4s ease; // Плавный переход для всех изменений
+      position: relative;
+
+
+      // Стили при наведении
+      &:hover {
+        color: $mainColor;
+      }
+
+    }
+  }
+
+  .container__reviews{
+    margin-top: 100px;
+    display: flex;
+    gap: 20px;
+    align-items: stretch;
+    flex-wrap: wrap;
+
+    .review__item{
+      padding: 20px 20px 70px 20px;
+      border: 1px solid rgba(157, 174, 182, 0.2);
+      flex: 0 0 calc(33.33% - 20px);
+
+      .title__block{
+        display: flex;
+        h3{
+          width: 100%;
+          display: flex;
+          align-items: stretch;
+          justify-content: space-between;
+
+          span{
+            margin-left: 20px;
+            display: flex;
+            align-items: center;
+            img{
+              max-width: 30px;
+            }
+            .mark{
+              margin-left: 5px;
+              color: #6d7a80;
+              font-size: 16px;
+              font-weight: bold;
+            }
+          }
+        }
+      }
+
+      .date{
+        margin-top: 20px;
+        font-size: 16px;
+        color: #6d7a80;
+        font-weight: bold;
+      }
+      p{
+        margin-top: 20px;
+        font-size: 17px;
+        font-weight: normal;
+        text-align: justify;
+        color: #000;
+
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 1280px){
+
+
+  .page__reviews{
+
+    .container__reviews{
+
+      .review__item{
+
+        .title__block{
+
+          h3{
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+
+@media screen and (max-width: 900px){
+
+
+  .page__reviews{
+
+    .container__reviews{
+
+      .review__item{
+
+        flex: 1 1 calc(50% - 20px);
+
+        .title__block{
+
+          h3{
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+
+@media screen and (max-width: 578px){
+  .page__reviews{
+    .container__reviews{
+      margin-top: 20px;
+      .review__item{
+
+        flex: 1 1 calc(100% );
+      }
+    }
+  }
+
+}

@@ -1,5 +1,6 @@
 import $ from "jquery"
 import "slick-slider"
+import "jquery-mask-plugin"
 
 document.addEventListener('DOMContentLoaded', function() {
     // Добавляем класс 'active' к ul.tabs и класс 'current' к первому элементу li
@@ -48,6 +49,20 @@ $(document).ready(function(){
         $(".active__burger").hide(500);
         $(".close__burger").show(500);
     });
+
+
+    $(".btn__popup").click(function(){
+        $(".overlay__popup").show();
+        $(".popup__feedback").slideDown();
+    });
+
+
+    $(".overlay__popup, .close").click(function(){
+        $(".overlay__popup").hide();
+        $(".popup__feedback").slideUp();
+    });
+
+    $('.phone__input').mask('+375 (00) 000-00-00');
 
     $(".close__burger, .overlay").click(function(){
         $(".mobile__menu").slideUp(500);

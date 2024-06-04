@@ -3,6 +3,7 @@ footer{
   padding: 30px 0px;
   margin-top: 80px;
 
+
   .container__footer{
     margin-top: 0px;
     display: flex;
@@ -104,6 +105,131 @@ footer{
         p{
           margin-top: 20px;
           font-size: 16px;
+        }
+      }
+    }
+
+  }
+}
+
+.popup{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  background-color: #FFF;
+  z-index: 18;
+  width: 100%;
+  max-width: 50%;
+  transform: translate(-50%, -50%);
+  padding: 40px;
+
+  display: none;
+  .close{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    max-width: 30px;
+    cursor: pointer;
+  }
+
+  h2{
+    font-size: 25px;
+  }
+
+  form{
+    h2{
+      font-size: 58px;
+      line-height: 120%;
+      margin-bottom: 30px;
+    }
+
+    .form-group{
+      margin-top: 20px;
+
+      label{
+        margin-bottom: 10px;
+        display: block;
+      }
+
+      input, textarea{
+        width: 100%;
+        padding: 20px 30px;
+        border: 1px solid rgba(157, 174, 182, 0.2);
+
+        &:focus {
+          border-color: $mainColor; // Изменение цвета границы на зеленый при фокусе
+          outline: none; // Убирает стандартное выделение
+        }
+      }
+
+      button{
+        width: 100%;
+        background-color: #2bb446;
+        padding: 20px 50px;
+        color: #FFF;
+        font-size: 18px;
+        margin-top: 20px;
+        border: 1px solid #2bb446;
+        transition: 0.4s;
+        text-transform: uppercase;
+        letter-spacing: 1.2px;
+      }
+    }
+
+    .from-group__buttons {
+      display: grid;
+      grid-template-columns: 1fr 1fr; // Создание двух равных колонок
+      gap: 20px; // Отступ между колонками
+      align-items: center;
+
+      div{
+        font-size: 14px;
+      }
+    }
+  }
+
+}
+
+
+@media screen and (max-width: 900px){
+  .popup{
+
+
+    form{
+      h2{
+        font-size: 30px;
+      }
+
+    }
+
+  }
+}
+
+
+@media screen and (max-width: 578px){
+  .popup{
+    width: 100%;
+    max-width: 95%;
+
+    form {
+
+      padding: 0;
+      h2 {
+        font-size: 130em;
+        text-align: center;
+        margin-bottom: 10px;
+      }
+
+
+      .form-group{
+        margin-top: 10px;
+      }
+
+      .from-group__buttons{
+        grid-template-columns: 1fr;
+
+        button{
+          margin-top: 0px;
         }
       }
     }

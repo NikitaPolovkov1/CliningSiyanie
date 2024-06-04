@@ -44,6 +44,7 @@
     "last 5 versions"
   ],
   "dependencies": {
-    "jquery": "^3.7.1"
+    "jquery": "^3.7.1",
+    "jquery-mask-plugin": "^1.14.16"
   }
 }

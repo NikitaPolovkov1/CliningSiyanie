@@ -274,7 +274,8 @@ a, button, input{
 .main__contacts__section,
 .about__main__section,
 .blog__single__section,
-.container__footer{
+.container__footer,
+.page__reviews{
   width: 100%;
   max-width: 1500px;
   margin: 0 auto;
@@ -305,6 +306,17 @@ a, button, input{
   top: 0;
   left: 0;
   z-index: 14;
+  display: none;
+  background-color: rgba(46, 54, 57, 0.63);
+}
+
+.overlay__popup{
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 17;
   display: none;
   background-color: rgba(46, 54, 57, 0.63);
 }
